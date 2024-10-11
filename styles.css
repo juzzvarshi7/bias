@@ -111,7 +111,7 @@ footer {
     z-index: 10; /* Make sure it is above other elements */
 }
 
-/* Updated styles for the fog */
+/* Updated styles for the fog GIF */
 .fog-animation {
     position: fixed;
     top: 0; /* Positioned at the top */
@@ -121,6 +121,7 @@ footer {
     z-index: 1; /* Behind other elements */
     opacity: 0.5; /* Adjust opacity for better visibility */
 }
+
 
 /* Updated styles for the popup */
 .popup {
