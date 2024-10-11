@@ -1,27 +1,19 @@
-// script.js
+// Script to handle popup functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const popupImg = document.getElementById('popup-img');
+    let showPopupCount = 0;
 
-// Automatically play the audio without showing controls
-const audio = document.getElementById('background-audio');
-audio.volume = 0.5; // Set the volume to a comfortable level
-
-
-// Add this to your script.js
-function showPopup() {
-    const popup = document.getElementById('seonghwaPopup');
-    popup.style.display = 'block'; // Show the popup
-    setTimeout(() => {
-        popup.style.display = 'none'; // Hide after 2 seconds
-    }, 2000);
-}
-
-// Show the popup multiple times (2-3 times)
-let count = 0;
-const interval = setInterval(() => {
-    if (count < 3) {
-        showPopup();
-        count++;
-    } else {
-        clearInterval(interval); // Stop after 3 popups
+    // Display the image as a popup two or three times when the page is loaded
+    function showPopup() {
+        if (showPopupCount < 3) {
+            popupImg.style.display = 'block';
+            setTimeout(() => {
+                popupImg.style.display = 'none';
+            }, 5000); // Hide popup after 5 seconds
+            showPopupCount++;
+        }
     }
-}, 4000); // Popup every 4 seconds
 
+    setTimeout(showPopup, 3000); // Show popup 3 seconds after page load
+    setInterval(showPopup, 15000); // Repeat every 15 seconds
+});
