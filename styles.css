@@ -1,0 +1,70 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #D4D4D4; /* Chrome silver text color */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency for readability */
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #0096FF; /* Blue border */
+    padding-bottom: 10px;
+}
+
+header h1 {
+    color: #0096FF; /* Blue text color */
+}
+
+header p {
+    color: #D4D4D4; /* Chrome silver text color */
+}
+
+.gallery {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #0096FF; /* Blue text color */
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.image-row img {
+    width: 150px;
+    border: 2px solid #D4D4D4; /* Chrome silver border */
+    border-radius: 10px;
+}
+
+.audio-player {
+    text-align: center;
+    margin: 20px 0;
+}
+
+audio {
+    width: 80%;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid #0096FF; /* Blue border */
+    padding-top: 10px;
+    color: #D4D4D4; /* Chrome silver text color */
+}
