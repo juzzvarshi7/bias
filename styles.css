@@ -119,3 +119,13 @@ footer {
     width: 300px; /* Adjust size as needed */
     height: auto;
 }
+
+/* Add this to your styles.css */
+.heart-animation {
+    position: fixed;
+    top: 20%; /* Adjust to position it */
+    left: 20%; /* Adjust to position it */
+    width: 100px; /* Size of the heart animation */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Make sure it is above other elements */
+}
