@@ -1,143 +1,91 @@
-/* styles.css */
+/* Base styling */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif; /* Modern and elegant font */
-    background: black;
-    color: #C0C0C0; /* Chrome silver text color */
+    font-family: 'ElegantFont', sans-serif;
+    background-color: black;
     overflow-x: hidden;
 }
 
-.background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
-    z-index: -1;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    color: #C0C0C0; /* Chrome silver */
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
-}
-
-.gallery {
-    margin: 0;
+.background {
+    position: relative;
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black; /* Only black background */
+}
+
+.container {
+    text-align: center;
+    color: chrome;
+    margin: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #c0c0c0; /* Chrome silver */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.images-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.image-row img {
-    width: 100%;
+.gallery-image {
+    width: 75%;
     height: auto;
-    flex: 1;
-    object-fit: cover;
-    margin: 2px;
-    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
-    transform: scale(0.75); /* Zoom out images by 25% */
-    transition: transform 0.5s, box-shadow 0.5s;
+    transform: scale(0.75);
+    transition: transform 0.5s ease;
+    border: 2px solid #c0c0c0; /* Chrome silver border */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-.image-row img:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+.gallery-image:hover {
+    transform: scale(1);
 }
 
-/* GIFs */
-.sparkle-gifs {
-    position: fixed;
-    top: 0;
-    left: 0;
+.popup-image {
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: none;
+    border: 3px solid #c0c0c0; /* Chrome silver */
+    cursor: pointer;
+}
+
+.magic-fog {
+    position: absolute;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Make sure they don't interfere with interactions */
-    z-index: 1; /* Position above the images */
+    background: url('fog.gif') center center / cover no-repeat;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-.sparkle {
-    animation: sparkle 2s infinite alternate;
+.effect-gif {
     position: absolute;
+    width: 150px;
+    height: 150px;
+    animation: float 3s infinite ease-in-out;
 }
 
-.heart {
-    animation: hearts 4s infinite;
-    position: absolute;
+.sparkle-effect {
+    left: 20%;
+    top: 50%;
 }
 
-.fog {
-    animation: fog 6s infinite;
-    position: absolute;
+.heart-effect {
+    right: 15%;
+    bottom: 30%;
 }
 
-@keyframes sparkle {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1.2); }
-}
-
-@keyframes hearts {
-    0% { opacity: 0; transform: translateY(0); }
-    50% { opacity: 1; transform: translateY(-20px); }
-    100% { opacity: 0; transform: translateY(0); }
-}
-
-@keyframes fog {
-    0% { opacity: 0; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.1); }
-    100% { opacity: 0; transform: scale(1); }
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    color: #C0C0C0; /* Chrome silver */
-    font-size: 1.2rem;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-}
-
-
-/* Updated styles for the sparkles */
-.heart-animation {
-    position: fixed;
-    top: 20%; /* Adjust to position it */
-    left: 25%; /* Move to 25% from the left */
-    width: 25px; /* Reduced size by 75% */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 10; /* Make sure it is above other elements */
-}
-
-/* Updated styles for the fog GIF */
-.fog-animation {
-    position: fixed;
-    top: 0; /* Positioned at the top */
-    left: 0; /* Start from the left */
-    width: 100%; /* Fill the width of the screen */
-    height: 100%; /* Fill the height of the screen */
-    z-index: 1; /* Behind other elements */
-    opacity: 0.5; /* Adjust opacity for better visibility */
-}
-
-
-/* Updated styles for the popup */
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    left: 50%; /* Center the popup */
-    top: 50%; /* Center the popup */
-    transform: translate(-50%, -50%); /* Adjust position */
-    border: 2px solid #C0C0C0; /* Chrome silver border */
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.popup img {
-    width: 105px; /* Reduced size by 65% */
-    height: auto; /* Maintain aspect ratio */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
