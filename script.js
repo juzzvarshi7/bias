@@ -24,3 +24,4 @@ const interval = setInterval(() => {
         clearInterval(interval); // Stop after 3 popups
     }
 }, 4000); // Popup every 4 seconds
+
