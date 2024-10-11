@@ -101,7 +101,28 @@ footer {
 }
 
 
-/* Add this to your styles.css */
+/* Updated styles for the sparkles */
+.heart-animation {
+    position: fixed;
+    top: 20%; /* Adjust to position it */
+    left: 25%; /* Move to 25% from the left */
+    width: 25px; /* Reduced size by 75% */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Make sure it is above other elements */
+}
+
+/* Updated styles for the fog */
+.fog-animation {
+    position: fixed;
+    top: 0; /* Positioned at the top */
+    left: 0; /* Start from the left */
+    width: 100%; /* Fill the width of the screen */
+    height: 100%; /* Fill the height of the screen */
+    z-index: 1; /* Behind other elements */
+    opacity: 0.5; /* Adjust opacity for better visibility */
+}
+
+/* Updated styles for the popup */
 .popup {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -116,16 +137,6 @@ footer {
 }
 
 .popup img {
-    width: 300px; /* Adjust size as needed */
-    height: auto;
-}
-
-/* Add this to your styles.css */
-.heart-animation {
-    position: fixed;
-    top: 20%; /* Adjust to position it */
-    left: 20%; /* Adjust to position it */
-    width: 100px; /* Size of the heart animation */
+    width: 105px; /* Reduced size by 65% */
     height: auto; /* Maintain aspect ratio */
-    z-index: 10; /* Make sure it is above other elements */
 }
