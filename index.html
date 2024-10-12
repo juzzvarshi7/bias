@@ -4,47 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seonghwa's Magical World</title>
+    <title>Seonghwa - My Love</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
-        <!-- Hidden Audio Player -->
-        <audio id="hidden-audio" loop autoplay>
-            <source src="seonghwa_song.mp3" type="audio/mpeg">
-        </audio>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>Seonghwa - My Eternal Love</h1>
+    </header>
 
-        <div class="container">
-            <!-- Popup Image -->
-            <img src="seonghwa_character.jpeg" class="popup-image" id="popup-img" alt="Seonghwa Character" />
-
-            <h1 class="title">Seonghwa's Magical World</h1>
-
-            <!-- Image Gallery -->
-            <div class="images-gallery">
-                <img src="image1.jpg" class="gallery-image" alt="Seonghwa Image 1" />
-                <img src="image2.jpg" class="gallery-image" alt="Seonghwa Image 2" />
-                <img src="image3.jpg" class="gallery-image" alt="Seonghwa Image 3" />
-                <img src="image4.jpg" class="gallery-image" alt="Seonghwa Image 4" />
-                <img src="image5.jpg" class="gallery-image" alt="Seonghwa Image 5" />
-                <img src="image6.jpg" class="gallery-image" alt="Seonghwa Image 6" />
-                <img src="image7.jpg" class="gallery-image" alt="Seonghwa Image 7" />
-                <img src="image8.jpg" class="gallery-image" alt="Seonghwa Image 8" />
-                <img src="image9.jpg" class="gallery-image" alt="Seonghwa Image 9" />
-                <img src="image10.jpg" class="gallery-image" alt="Seonghwa Image 10" />
-                <img src="image11.jpg" class="gallery-image" alt="Seonghwa Image 11" />
-                <img src="image12.jpg" class="gallery-image" alt="Seonghwa Image 12" />
-                <img src="image13.jpg" class="gallery-image" alt="Seonghwa Image 13" />
-                <img src="image14.jpg" class="gallery-image" alt="Seonghwa Image 14" />
-            </div>
+    <div class="gallery">
+        <div class="image-row">
+            <img src="image1.jpg" alt="Seonghwa Image 1">
+            <img src="image2.jpg" alt="Seonghwa Image 2">
+            <img src="image3.jpg" alt="Seonghwa Image 3">
+            <img src="image4.jpg" alt="Seonghwa Image 4">
         </div>
+        <div class="image-row">
+            <img src="image5.jpg" alt="Seonghwa Image 5">
+            <img src="image6.jpg" alt="Seonghwa Image 6">
+            <img src="image7.jpg" alt="Seonghwa Image 7">
+            <img src="image8.jpg" alt="Seonghwa Image 8">
+        </div>
+        <div class="image-row">
+            <img src="image9.jpg" alt="Seonghwa Image 9">
+            <img src="image10.jpg" alt="Seonghwa Image 10">
+            <img src="image11.jpg" alt="Seonghwa Image 11">
+            <img src="image12.jpg" alt="Seonghwa Image 12">
+        </div>
+        <div class="image-row">
+            <img src="image13.jpg" alt="Seonghwa Image 13">
+            <img src="image14.jpg" alt="Seonghwa Image 14">
+        </div>
+    </div>
 
-        <!-- Fog and Sparkle Effects -->
-        <div class="magic-fog"></div>
-        <img src="sparkle.gif" class="effect-gif sparkle-effect" alt="Sparkle Effect" />
-        <video class="effect-gif heart-effect" autoplay loop muted>
+    <footer>
+        <p>Made with all my love for the beautiful Seonghwa</p>
+    </footer>
+
+    <!-- Background audio -->
+    <audio id="background-audio" autoplay loop>
+        <source src="seonghwa_song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Pop-up Image -->
+    <div class="popup" id="seonghwaPopup">
+        <img src="seonghwa_character.jpeg" alt="Seonghwa Character" />
+    </div>
+
+    <!-- Sparkles and fog animations -->
+    <div class="effects">
+        <img src="sparkle.gif" class="sparkle" alt="Sparkle">
+        <video autoplay loop muted class="heart-animation">
             <source src="heart.webm" type="video/webm">
+            Your browser does not support the video tag.
         </video>
+        <img src="fog.gif" class="fog" alt="Magical Fog">
     </div>
 
     <script src="script.js"></script>
