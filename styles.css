@@ -80,10 +80,11 @@ header {
     z-index: 1;
 }
 
-.sparkle, .fog {
+.fog {
     position: absolute;
     width: 100px;
     height: auto;
+    right: 25%;
 }
 
 .heart-animation {
@@ -94,6 +95,9 @@ header {
 
 .sparkle {
     animation: sparkle 2s infinite alternate;
+    position: absolute;
+    width: 100px;
+    height: auto;
 }
 
 .heart-animation {
