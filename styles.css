@@ -66,7 +66,7 @@ header {
 
 /* Seonghwa character resizing */
 .popup img {
-    width: 200px;  /* Reduced size */
+    width: 140px;  /* Reduced size */
     height: auto;
 }
 
@@ -85,7 +85,7 @@ header {
 .heart-animation {
     position: absolute;
     top: 50%;
-    left: 60%;  /* Changed position */
+    left: 40%;  /* Changed position */
     width: 120px;  /* Adjusted width */
     height: auto;
 }
@@ -99,15 +99,6 @@ header {
     animation: sparkle 2s infinite alternate;
 }
 
-/* Fog animation */
-.fog {
-    position: absolute;
-    bottom: 0;
-    left: 25%;  /* Positioned in a different area */
-    width: 200px;  /* Adjusted width */
-    height: auto;
-    animation: fog 6s infinite;
-}
 
 @keyframes sparkle {
     0% { opacity: 0; transform: scale(0.8); }
