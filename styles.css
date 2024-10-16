@@ -85,7 +85,7 @@ header {
 .heart-animation {
     position: absolute;
     top: 50%;
-    left: 40%;  /* Changed position */
+    right: 40%;  /* Changed position */
     width: 120px;  /* Adjusted width */
     height: auto;
 }
@@ -94,7 +94,7 @@ header {
     position: absolute;
     top: 10%;
     left: 20%;  /* Changed position */
-    width: 80px;  /* Adjusted width */
+    width: 55px;  /* Adjusted width */
     height: auto;
     animation: sparkle 2s infinite alternate;
 }
