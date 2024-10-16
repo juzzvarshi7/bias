@@ -64,8 +64,9 @@ header {
     border-radius: 15px;
 }
 
+/* Seonghwa character resizing */
 .popup img {
-    width: 300px;
+    width: 200px;  /* Reduced size */
     height: auto;
 }
 
@@ -80,31 +81,31 @@ header {
     z-index: 1;
 }
 
-.fog {
-    position: absolute;
-    width: 100px;
-    height: auto;
-    right: 25%;
-}
-
+/* Adjusted positions of heart.webm and sparkle.gif */
 .heart-animation {
     position: absolute;
-    width: 150px;
+    top: 50%;
+    left: 60%;  /* Changed position */
+    width: 120px;  /* Adjusted width */
     height: auto;
 }
 
 .sparkle {
-    animation: sparkle 2s infinite alternate;
     position: absolute;
-    width: 100px;
+    top: 10%;
+    left: 20%;  /* Changed position */
+    width: 80px;  /* Adjusted width */
     height: auto;
+    animation: sparkle 2s infinite alternate;
 }
 
-.heart-animation {
-    animation: hearts 4s infinite;
-}
-
+/* Fog animation */
 .fog {
+    position: absolute;
+    bottom: 0;
+    left: 25%;  /* Positioned in a different area */
+    width: 200px;  /* Adjusted width */
+    height: auto;
     animation: fog 6s infinite;
 }
 
