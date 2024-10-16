@@ -85,7 +85,7 @@ header {
 .heart-animation {
     position: absolute;
     top: 50%;
-    right: 60%;  /* Changed position */
+    right: 300px;  /* Changed position */
     width: 120px;  /* Adjusted width */
     height: auto;
 }
